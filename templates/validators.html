@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Validators_form</h1>
+        <form method="POST">
+            {% csrf_token %} 
+              {{form.as_p}}
+            <input type="submit" value="validate_form">
+        </form>
+    </center>
+</body>
+</html>
